@@ -15,3 +15,8 @@ class GreetingController {
         return Greeting(counter.incrementAndGet(), "Hello, $name!");
     }
 }
+
+/*
+* teste no navegador:
+* http://localhost:8080/greeting?name=Ricardo
+* */

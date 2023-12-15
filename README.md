@@ -1,2 +1,2 @@
 # kotlin-microservices
-criando uma api com kotlin
+Esse é um projeto, onde foi criado uma api em kotlin, conectando em um banco de dados MySQL

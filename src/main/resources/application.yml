@@ -1,10 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
+    # url = jdbc:mysql://localhost:3306/
+    # databaseName = rest_with_spring_boot_rprojetos
+    # useTimezone=true&serverTimezone=UTC ### data/hora referencia do db.
     url: jdbc:mysql://localhost:3306/rest_with_spring_boot_rprojetos?useTimezone=true&serverTimezone=UTC
     username: root
     password: admin123
   #https://pt.stackoverflow.com/questions/90723/como-funciona-hibernate-hbm2ddl-auto
+  # a configuração abaixo cria a tabela automaticamente, mas não pode ser usada dessa
+  # maneira em produção, apenas para os testes / desenvolvimento.
   jpa:
     hibernate:
       ddl-auto: update
